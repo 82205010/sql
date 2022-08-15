@@ -1,0 +1,20 @@
+show databases;
+create database book;
+show databases;
+use book;
+create table user(id int(11) primary key,name varchar(30)not null,email varchar(30) not null);
+show tables;
+desc user;
+insert into user values('1','vino','vino@gmail.com');
+select * from user;
+insert into user values('2','vin','vin@gmail.com');
+select * from user;
+update user set name,'pen' where id='1';
+select * from user;
+alter table user add column password varchar(30)not null;
+select * from user;
+delete from user where id='1'
+select * from user;
+show databases;
+drop database information_schema;
+show databases;
